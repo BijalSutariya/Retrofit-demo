@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity"
+    android:id="@+id/layoutConstraint">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+        <TextView
+            android:id="@+id/tvHomeAccidentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/type_of_accident"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewHome" />
+
+        <RadioGroup
+            android:id="@+id/rgHomeAccidentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeAccidentType">
+
+            <RadioButton
+                android:id="@+id/rbHomeRoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/road_accident"
+                android:checked="true"
+                android:textColor="@color/colorSecodary" />
+
+            <RadioButton
+                android:id="@+id/rbHomeWorkPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_place_accident"
+                android:textColor="@color/colorSecodary" />
+
+            <RadioButton
+                android:id="@+id/rbHomeOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_accident"
+                android:textColor="@color/colorSecodary" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvHomeDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/date_time_of_accident"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgHomeAccidentType" />
+
+        <EditText
+            android:id="@+id/etHomeDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:imeOptions="actionNext"
+            android:hint="@string/select_date_and_time"
+            android:inputType="datetime"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeDateTime" />
+
+        <TextView
+            android:id="@+id/tvHomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/title"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etHomeDateTime" />
+
+        <EditText
+            android:id="@+id/etHomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/enter_title"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeTitle" />
+
+        <TextView
+            android:id="@+id/tvHomeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/name"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etHomeTitle" />
+
+        <EditText
+            android:id="@+id/etHomeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/enter_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeName" />
+
+        <TextView
+            android:id="@+id/tvHomeContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etHomeName" />
+
+        <EditText
+            android:id="@+id/etHomeContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/enter_phone_number"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeContact" />
+
+        <TextView
+            android:id="@+id/tvHomeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/email"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etHomeContact" />
+
+        <EditText
+            android:id="@+id/etHomeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/enter_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeEmail" />
+
+        <TextView
+            android:id="@+id/tvHomeLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/select_location"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etHomeEmail" />
+
+        <!--<fragment
+            android:id="@+id/etHomeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeLocation"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />-->
+        <AutoCompleteTextView
+            android:id="@+id/etHomeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/select_location"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeLocation" />
+        <TextView
+            android:id="@+id/tvHomeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/describe_the_accident"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etHomeLocation" />
+
+        <EditText
+            android:id="@+id/etHomeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:gravity="top|left"
+            android:hint="@string/enter_description"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:minLines="3"
+            android:maxLines="10"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeDescription"
+            tools:ignore="RtlHardcoded" />
+
+
+        <Button
+            android:id="@+id/btnAddProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/add_profile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etHomeDescription" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:elevation="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnusedAttribute" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

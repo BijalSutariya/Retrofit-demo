@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">LoginRegistration</string>
+    <string name="not_specified">Not Specified</string>
+    <string name="email">Email : </string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password">Password : </string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="confirmPassword">Confirm : </string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="contact">Contact : </string>
+    <string name="enter_contact">Enter Contact</string>
+    <string name="registration">Registration</string>
+    <string name="notification_list">Notification List</string>
+    <string name="logout">Logout</string>
+    <string name="facebook_login">Continue with Facebook</string>
+
+    <string name="facebook_app_id">397998270709309</string>
+    <string name="fb_login_protocol_scheme">fb397998270709309</string>
+    <string name="home">Home</string>
+    <string name="add_profile">Add profile</string>
+    <string name="select_date_and_time">Select Date And Time</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="select_location">Select Location</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="road_accident">Road Accident</string>
+    <string name="work_place_accident">Work Place Accident</string>
+    <string name="other_accident">Other Accident</string>
+    <string name="type_of_accident">Type of Accident</string>
+    <string name="date_time_of_accident"><![CDATA[Date & Time of Accident]]></string>
+    <string name="title">Title</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="describe_the_accident">Describe the Accident</string>
+    <string name="setting">setting</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="googleMap">Google Map</string>
+    <string name="MapView">MapView</string>
+    <string name="todo">TODO</string>
+    <string name="searchHere">Search here</string>
+    <string name="test">set</string>
+    <string name="permission_rationale">Permission Rational</string>
+    <string name="permission_denied_explanation">Permission Denied</string>
+    <string name="settings">Settings</string>
+    <string name="no_location_detected">No Location Detected</string>
+
+</resources>

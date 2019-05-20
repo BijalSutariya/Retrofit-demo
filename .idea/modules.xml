@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../GsonDemo2.iml" filepath="$PROJECT_DIR$/../GsonDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../circularprogressbar/circularprogressbar.iml" filepath="$PROJECT_DIR$/../circularprogressbar/circularprogressbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginregistration.iml" filepath="$PROJECT_DIR$/loginregistration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mapintegration/mapintegration.iml" filepath="$PROJECT_DIR$/../mapintegration/mapintegration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mapsinaction/mapsinaction.iml" filepath="$PROJECT_DIR$/../mapsinaction/mapsinaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../markerlibrary/markerlibrary.iml" filepath="$PROJECT_DIR$/../markerlibrary/markerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myapplication/myapplication.iml" filepath="$PROJECT_DIR$/../myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../postrequest/postrequest.iml" filepath="$PROJECT_DIR$/../postrequest/postrequest.iml" />
+    </modules>
+  </component>
+</project>

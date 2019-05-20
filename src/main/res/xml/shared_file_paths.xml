@@ -1,0 +1,7 @@
+<paths>
+    <!-- Configure shared external storage path, path value is relative to your device external storage root path ( /sdcard ). -->
+    <external-path
+        name="external_files"
+        path="Android/data/com.example.loginregistration/files/Pictures"/>
+
+</paths>
