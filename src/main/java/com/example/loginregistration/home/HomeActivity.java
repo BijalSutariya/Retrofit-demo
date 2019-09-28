@@ -498,6 +498,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             if (file != null) {
                 photoList.remove(0);
                 adapter.notifyItemRemoved(0);
+
                 addVideo(file.getAbsolutePath());
                 Log.i("TAG", "onActivityResult: " + file.getAbsolutePath());
             }
